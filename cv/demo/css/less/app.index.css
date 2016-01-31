@@ -1,0 +1,239 @@
+.padding_page {
+  padding: 44px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-size: 12px;
+  font-family: "微软雅黑", "Microsoft YaHei", sans-serif;
+  color: white;
+  border-collapse: collapse;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 16px;
+}
+.zoom {
+  zoom: 1;
+  overflow: hidden;
+}
+#container {
+  color: white;
+  -webkit-font-smoothing: none;
+  text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+  /*-moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+    -webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+    animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;*/
+}
+@-moz-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+@keyframes blink {
+  to {
+    background-color: #223332;
+  }
+}
+#container {
+  width: 592px;
+  height: 872px;
+  margin: 40px auto;
+  padding: 44px;
+  background: #132e43;
+  background-color: #1d2b2a;
+}
+#container .page {
+  background: gray;
+}
+#container .page .left {
+  float: left;
+  width: 370px;
+  zoom: 1;
+  overflow: hidden;
+}
+#container .page .right {
+  float: left;
+  /*padding-left: @left_width;*/
+  width: 222px;
+  zoom: 1;
+  overflow: hidden;
+}
+#container .page .right .des {
+  margin-right: 0;
+}
+#container .page .left .face_img,
+#container .page .right .face_img {
+  float: left;
+  width: 165px;
+  height: 165px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  background: #177FA6;
+  margin-right: 10px;
+}
+#container .page .left .face_img img,
+#container .page .right .face_img img {
+  width: 124px;
+}
+#container .page .left .personalInfo,
+#container .page .right .personalInfo {
+  font-size: 14px;
+  padding-top: 30px;
+  line-height: 28px;
+  zoom: 1;
+  overflow: hidden;
+}
+#container .page .left .pd-btm2,
+#container .page .right .pd-btm2 {
+  padding-bottom: 1em;
+}
+#container .page .left .h1,
+#container .page .right .h1 {
+  font-size: 20px;
+}
+#container .page .left .des,
+#container .page .right .des {
+  margin: 4em 2.5em;
+  position: relative;
+  line-height: 1.8em;
+}
+#container .page .left .des h2,
+#container .page .right .des h2 {
+  position: relative;
+}
+#container .page .left .des p,
+#container .page .right .des p,
+#container .page .left .des span,
+#container .page .right .des span {
+  opacity: 0.5;
+  line-height: 1.8em;
+}
+#container .page .left .des .circledown,
+#container .page .right .des .circledown {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  font-size: 20px;
+}
+#container .page .left .des .sec-flow,
+#container .page .right .des .sec-flow {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 2em;
+}
+#container .page .left .des .sec-flow p,
+#container .page .right .des .sec-flow p {
+  line-height: 18px;
+}
+#container .page .left .des .sec-flow .flow-state,
+#container .page .right .des .sec-flow .flow-state {
+  position: absolute;
+  width: 18px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+#container .page .left .des .sec-flow .flow-state > div,
+#container .page .right .des .sec-flow .flow-state > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#container .page .left .des .sec-flow .flow-state .point-circle,
+#container .page .right .des .sec-flow .flow-state .point-circle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+}
+#container .page .left .des .sec-flow .flow-state .flow-line,
+#container .page .right .des .sec-flow .flow-state .flow-line {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 100%;
+  background: white;
+  opacity: 0.7;
+}
+#container .page .left .des .exp-title,
+#container .page .right .des .exp-title {
+  opacity: 0.7;
+}
+#container .page .left .des .icon-row,
+#container .page .right .des .icon-row {
+  padding-left: 2em;
+  position: relative;
+}
+#container .page .left .des .icon-row .location,
+#container .page .right .des .icon-row .location {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#container .page .left .contact_me,
+#container .page .right .contact_me {
+  margin-top: 30px;
+}
+#container .page .left .contact_me p,
+#container .page .right .contact_me p {
+  margin-top: 0.5em;
+}
+#container .page .right .des {
+  margin-right: 0;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

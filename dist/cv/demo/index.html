@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ruan</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="/cv/demo/iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="/cv/demo/css/less/app.index.css">
+  <link rel="stylesheet" type="text/css" href="/cv/demo/css/animate.css">
+  <script src="/cv/demo/js/jquery.min.js"></script>
+  <script src="/cv/demo/js/typed.js" type="text/javascript"></script>
+  <script src="/cv/demo/js/echarts/echarts.js"></script>
+  <script src="/cv/demo/js/index.js"></script>
+</head>
+<body>
+  <header>
+
+  </header>
+  <section id="container">
+    <section class="page">
+      <section class="left">
+        <div class="zoom">
+          <div class="face_img typed-pre-show1" >
+            <img src="/cv/demo/img/证件.jpg" alt="头像" >
+          </div>
+          <div class="personalInfo" id="typed-strings1">
+            <p>
+              <span class="h1">阮灏键</span>
+              <br>
+              web前端开发工程师
+            </p>
+          </div>
+          <div class="personalInfo">
+            <span id="typed1"></span>
+          </div>
+        </div>
+
+        <article class="des about_me" >
+          <i class="iconfont circledown typed-pre-show2">&#xe632;</i>
+          <h2 class="typed-pre-show2">关于我 ABOUT ME</h2>
+          <div id="typed-strings2">
+            <p>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写</p>
+          </div>
+          <span id="typed2"></span>
+        </article>
+
+        <article class="des experience">
+          <i class="iconfont circledown typed-pre-show3">&#xe636;</i>
+          <h2 class="typed-pre-show3">工作经验 EXPERIENCE</h2>
+          <section class="sec-flow">
+            <div class="flow-state typed-pre-show3">
+              <div>
+                <i class="flow-line"></i>
+                <i class="point-circle"></i>
+              </div>
+            </div>
+            <div id="typed-strings3">
+              <p class="exp-date">2013年10月-2014年10月<br>
+                <span class="exp-title">广东丰德科技有限公司 软件工程师</span><br>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写。
+              </p>
+            </div>
+            <span id="typed3" style="line-height:1em"></span>
+            
+          </section>
+          <section class="sec-flow">
+            <div class="flow-state typed-pre-show4">
+              <div>
+                
+                <i class="point-circle"></i>
+              </div>
+            </div>
+
+            <div id="typed-strings4">
+              <p class="exp-date">2014年11月-至今<br>
+                <span class="exp-title">广州三之乐科技有限公司 web前端开发工程师</span><br>
+                负责公司web前端各大开发任务;主要参与开发：<br>
+                督办系统：<br>
+                长安基金交易平台前端：<br>
+                长安基金微网站：<br>
+              </p>
+            </div>
+            <span id="typed4" style="line-height:1em"></span>
+
+          </section>
+        </article>
+
+        <article class="des contact_me">
+          <i class="iconfont circledown">&#xe615;</i>
+          <h2 class="pd-btm2">兴趣爱好 INTERST</h2>
+          <p class="icon-row"><i class="iconfont location">&#xe60b;</i>羽球/音乐/移动互联</p>
+        </article>
+        
+
+
+      </section>
+      <section class="right">
+        <article class="des contact_me">
+          <i class="iconfont circledown">&#xe615;</i>
+          <h2 class="pd-btm2">联系我 ABOUT ME</h2>
+          <p class="icon-row"><i class="iconfont location">&#xe60e;</i>工作地点：xxx</p>
+          <p class="icon-row"><i class="iconfont location">&#xe60f;</i>电话号码：1591-5746-874</p>
+          <p class="icon-row"><i class="iconfont location">&#xe623;</i>邮箱：610708075@qq.com</p>
+        </article>
+
+        <article class="des experience">
+          <i class="iconfont circledown">&#xe61e;</i>
+          <h2>技能 SKILLS</h2>
+          <p>技能</p>
+        </article>
+
+        <article class="des experience">
+          <i class="iconfont circledown">&#xe637;</i>
+          <h2>教育背景 EDUCATION</h2>
+          <p class="exp-date">2010-2014</p>
+          <p class="exp-title">广东药科大学 <br>计算机科学与技术(本科)</p>
+          <p >面向对象程序设计、计算机网络、数据结构与算法、编译原理、
+C语言程序设计Ⅰ&Ⅱ、数据库原理与应用、网络组建与管理等
+</p>
+        </article>
+
+        <article class="des experience">
+          <i class="iconfont circledown">&#xe63a;</i>
+          <h2>优势特长 EXPERTISE</h2>
+          <section id="chart" style="height:200px">
+
+
+          </section>
+        </article>
+      </section>
+    </section>
+    
+  </section>
+  <footer>
+
+  </footer>
+  <script type="text/javascript">
+
+  var count = 4
+
+  $(function(){
+
+
+
+      for (var i = 1; i <= count; i++) {
+        $('#typed-strings'+i).hide();
+        //$('.typed-pre-show'+i).hide();
+        $('.typed-pre-show'+i).css({"opacity":"0"});
+      };
+
+      typed(1);
+    });
+
+  function typed(i){
+
+    //$('.typed-pre-show'+i).show();
+    $('.typed-pre-show'+i).addClass('animated');
+    $('.typed-pre-show'+i).addClass('fadeIn');
+
+    $("#typed"+i).typed({
+      stringsElement: $('#typed-strings'+i),
+      typeSpeed: 0,
+      startDelay: 1000,
+      loop:false,
+      showCursor: false,
+      callback: function() {
+
+        if(i<=count){
+          
+          typed(++i);
+        }
+        
+      }
+  });
+
+  }
+
+
+  </script>
+</body>
+</html>
